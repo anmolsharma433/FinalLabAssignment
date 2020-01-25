@@ -37,7 +37,13 @@ class MainTableViewController: UITableViewController {
         return product.count
     }
 
-
+    @IBAction func sortById(_ sender: Any) {
+        product.sort(by:  {$0.productId < $1.productId} )
+              
+              self.tableView.reloadData()
+        
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainTableViewCell
         let productdetail = product[indexPath.row]

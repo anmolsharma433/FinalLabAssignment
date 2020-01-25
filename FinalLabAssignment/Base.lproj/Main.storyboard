@@ -75,6 +75,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="8QS-jv-jxW">
+                        <barButtonItem key="leftBarButtonItem" title="Sort By Id" id="APT-9o-b3X">
+                            <connections>
+                                <action selector="sortById:" destination="iH8-64-5mn" id="de4-g1-u2U"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Product" id="DYu-bg-EUK">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="F9e-o1-Vir"/>
